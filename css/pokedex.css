@@ -33,7 +33,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -55,6 +54,7 @@ body{
     width: 150px;
     height: 20px;
 }
+
 h3{
     padding: 0;
     margin: 0;
@@ -68,4 +68,65 @@ h5{
     width: 125px;
     height: 20px;
     text-align: center;
+}
+
+#mainInfoClick {
+    position: fixed;
+    display: none;
+    left: 1%;
+    top: 1%;
+    min-width: 98%;
+    min-height: 98vh;
+}
+.info0 {
+    width: 20%;
+    height: 30%;
+    min-width: 260px;
+    min-height: 300px;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.8);
+}
+#infoName{
+    min-width: 270px;
+    width: 20%;
+    height: 25px;
+    margin: auto;
+    margin-bottom: 1%;
+    text-align: center;
+}
+#infoTitleAbout{
+    min-width: 270px;
+    width: 20%;
+    height: 25px;
+    margin: auto;
+    text-align: center;
+    padding-top: 1%;
+    border-top: 1px solid black;
+}
+
+#infoAbout{
+    min-width: 270px;
+    width: 80%;
+    text-align: center;
+    min-height: 60px;
+    margin: auto;
+    border-bottom: 1px solid black;
+}
+#closeInfo{
+    position: fixed;
+    display: none;
+    z-index: 10;
+    right: 1%;
+    top: 1%;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
