@@ -101,21 +101,35 @@ h5{
     text-align: center;
 }
 #infoTitleAbout{
+    font-family:'Monospace';
     min-width: 270px;
     width: 20%;
-    height: 25px;
+    height: 30px;
     margin: auto;
     text-align: center;
-    padding-top: 1%;
+    padding-top: .5%;
     border-top: 1px solid black;
 }
 
 #infoAbout{
+    font-family:'Franklin Gothic Medium';
+    min-width: 270px;
+    width: 80%;
+    text-align: center;
+    min-height: 30px;
+    margin: auto;
+    padding-top: 1.5%;
+    border-top: 1px solid black;
+}
+#infoDetails{
+    font-family:'Franklin Gothic Medium';
     min-width: 270px;
     width: 80%;
     text-align: center;
     min-height: 60px;
     margin: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
     border-bottom: 1px solid black;
 }
 #closeInfo{

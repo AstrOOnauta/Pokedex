@@ -126,7 +126,7 @@ var infoAboutPokemon = ["Bulbasaur pode ser visto tirando uma soneca ao sol. A s
                         "Graveler cresce comendo pedras. Aparentemente prefere comer as pedras que estão cobertas de musgo. Este Pokémon come toneladas de pedras diariamente.",
                         "Golem vive em montanhas. Se tiver um grande terremoto, estes Pokémon rolarão em massa para descer para o pé da montanha.",
                         "Ponyta é um Pokémon muito fraco quando nasce, mal pode se levantar. Fortalece-se ao tropeçar e cair tentando seguir seus pais.",
-                        "Rapidash são vistos geralmente galopando por campos e planícies. Entretanto, quando este Pokémon fica sério, sua crina flameja e queima enquanto galopa a 240 km/h.",
+                        "Rapidash são vistos geralmente galopando por campos e planícies. Entretanto, quando este Pokémon fica sério, sua crina flameja e queima enquanto galopa a 240km/h.",
                         "Slowpoke usa sua cauda para pegar presas ao mergulhá-la em um rio. Entretanto, este Pokémon frequentemente esquece o que está fazendo e passa dias inteiros fazendo nada na beira da água.",
                         "A cauda de Slowbro tem um Shellder grudado nela com uma mordida. Como resultado, a cauda não pode ser mais usada para pesca, o que faz Slowbro nadar com relutância para pegar presas.",
                         "Magnemite se conecta às linhas de tensão para alimentar-se de eletricidade. Se faltar energia na sua casa, cheque seu disjuntor. Você pode encontrar um alto número destes Pokémon grudados à caixa do disjuntor.",
@@ -184,7 +184,7 @@ var infoAboutPokemon = ["Bulbasaur pode ser visto tirando uma soneca ao sol. A s
                         "A configuração genética instável de Eevee permite que mude de acordo com o ambiente em que vive. A radiação de várias pedras faz este Pokémon evoluir.",
                         "Vaporeon sofreu uma mutação repentina e cresceu brânquias e barbatanas que permitem que viva na água. Este Pokémon tem a habilidade de controlar água.",
                         "As células de Jolteon geram um nível baixo de eletricidade. Este poder é amplificado pela eletricidade estática do seu pelo, permitindo que solte relâmpagos. Seu pelo é feito de agulhas carregadas de eletricidade.",
-                        "O pelo macio de Flareon tem um propósito funcional de liberar calor no ar para que seu corpo não superaqueça. A temperatura corporal deste Pokémon pode atingir um máximo de 900 °C.",
+                        "O pelo macio de Flareon tem um propósito funcional de liberar calor no ar para que seu corpo não superaqueça. A temperatura corporal deste Pokémon pode atingir um máximo de 900°C.",
                         "Porygon é capaz de reverter completamente os dados do seu programa e entrar no espaço cibernético. Este Pokémon é protegido contra cópia, então não pode ser duplicado.",
                         "Omanyte é um dos Pokémon anciões que foi extinto há muito tempo e que foi regenerado a partir de fósseis por humanos. Se for atacado por um oponente, entra em sua concha dura.",
                         "Omastar usa seus tentáculos para capturar suas presas. Acredita-se que entrou em extinção porque sua concha cresceu pesada demais, fazendo com que seus movimentos ficassem muito devagar e difíceis.",
@@ -200,6 +200,158 @@ var infoAboutPokemon = ["Bulbasaur pode ser visto tirando uma soneca ao sol. A s
                         "Dragonite é capaz de dar a volta no mundo em apenas 16 horas. Tem um coração bondoso e guia para terra barcos perdidos durante tempestades.",
                         "Mewtwo é um Pokémon que foi criado por manipulação genética. Entretanto, apesar do poder científico dos humanos ter criado seu corpo, eles falharam em dar a Mewtwo um coração sensível.",
                         "Dizem que Mew possui a composição genética de todos os Pokémon. É capaz de ficar invisível quando quer para passar desapercebido quando alguém se aproxima."]
+
+var infoDetailsPokemon = ["PC máximo: 1.115 (Nível 40) <br> Altura: 0,7m <br> Peso: 6,9kg", //Bulbasaur #1
+                        "PC máximo: 1.699 (Nível 40) <br> Altura> 1,0m <br> Peso: 13,0kg",
+                        "PC máximo: 2.720 (Nível 40) <br> Altura: 2,0m <br> Peso: 100,0kg",
+                        "PC máximo: 980 (Nível 40) <br> Altura: 0,6m <br> Peso: 8,5kg",     //Charmander #4
+                        "PC máximo: 1.653 (Nível 40) <br> Altura: 1,1m <br> Peso: 19,0kg",
+                        "PC máximo: 2.889 (Nível 40) <br> Altura: 1,7m <br> Peso: 90,5kg",
+                        "PC máximo: 946 (Nível 40) <br> Altura: 0,5m <br> Peso: 9,0kg",     //Squirtle #7
+                        "PC máximo: 1.488 (Nível 40) <br> Altura: 1,0m <br> Peso: 22,5kg",
+                        "PC máximo: 2.466 (Nível 40) <br> Altura: 1,6m <br> Peso: 85,5kg",
+                        "PC máximo: 437 (Nível 40) <br> Altura: 0,3m <br> Peso: 2,9kg",     //Caterpie #10
+                        "PC máximo: 450 (Nível 40) <br> Altura: 0,7m <br> Peso: 9,9kg",
+                        "PC máximo: 1.827 (Nível 40) <br> Altura: 1,1m <br> Peso: 32,0kg",
+                        "PC máximo: 456 (Nível 40) <br> Altura: 0,3m <br> Peso: 3,2kg",     //Weedle #13
+                        "PC máximo: 432 (Nível 40) <br> Altura: 0,6m <br> Peso: 10,0kg",
+                        "PC máximo: 1.846 (Nível 40) <br> Altura: 1,0m <br> Peso: 29,5kg",
+                        "PC máximo: 680 (Nível 40) <br> Altura: 0,3m <br> Peso: 1,8kg",     //Pidgey #16
+                        "PC máximo: 1,194 (Nível 40) <br> Altura: 1,1m <br> Peso: 30,0kg",
+                        "PC máximo: 2.129 (Nível 40) <br> Altura: 1,5m <br> Peso: 39,5kg",
+                        "PC máximo: 734 (Nível 40) <br> Altura: 0,3m <br> Peso: 3,5kg",     //Rattata #19
+                        "PC máximo: 1.730 (Nível 40) <br> Altura: 0,7m <br> Peso: 18,5kg",
+                        "PC máximo: 798 (Nível 40) <br> Altura: 0,3m <br> Peso: 2,0kg",     //Spearow #21
+                        "PC máximo: 1.997 (Nível 40) <br> Altura: 1,2m <br> Peso: 38,0kg",
+                        "PC máximo: 927 (Nível 40) <br> Altura: 2,0m <br> Peso: 6,9kg",     //Ekans #23
+                        "PC máximo: 1.921 (Nível 40) <br> Altura: 3,5m <br> Peso: 65,0kg",
+                        "PC máximo: 938 (Nível 40) <br> Altura: 0,4m <br> Peso: 6,0kg",     //Pikachu #25
+                        "PC máximo: 2.182 (Nível 40) <br> Altura: 0,8m <br> Peso: 30,0kg",
+                        "PC máximo: 1.261 (Nível 40) <br> Altura: 0,6m <br> Peso: 12,0kg",  //Sandshrew #27
+                        "PC máximo: 2.374 (Nível 40) <br> Altura: 1.0m <br> Peso: 29.5kg",
+                        "PC máximo: 816 (Nível 40) <br> Altura: 0,4m <br> Peso: 7,0kg",     //Nidoran ♀ #29
+                        "PC máximo: 1.309 (Nível 40) <br> Altura: 0,8m <br> Peso: 20,0kg",
+                        "PC máximo: 2.488 (Nível 40) <br> Altura: 1,3m <br> Peso: 60,0kg",
+                        "PC máximo: 860 (Nível 40) <br> Altura: 0,5m <br> Peso: 9,0kg",     //Nidoran ♂  #32
+                        "PC máximo: 1.393 (Nível 40) <br> Altura: 0,9m <br> Peso: 19,5kg",
+                        "PC máximo: 2.567 (Nível 40) <br> Altura: 1,4m <br> Peso: 62,0kg",
+                        "PC máximo: 1.155 (Nível 40) <br> Altura: 0,6m <br> Peso: 7,5kg",   //Clafairy #35
+                        "PC máximo: 2.437 (Nível 40) <br> Altura: 1,3m <br> Peso: 40,0kg",
+                        "PC máximo: 883 (Nível 40) <br> Altura: 0,6m <br> Peso: 9,9kg",     //Vulpix #37
+                        "PC máximo: 2.279 (Nível 40) <br> Altura: 1,1m <br> Peso: 19,9kg",
+                        "PC máximo: 724 (Nível 40) <br> Altura: 0,5m <br> Peso: 5,5kg",     //Jigglypuff #39
+                        "PC máximo: 1.926 (Nível 40) <br> Altura: 1,0m <br> Peso: 12,0kg",
+                        "PC máximo: 667 (Nível 40) <br> Altura: 0,8m <br> Peso: 7,5kg",     //Zubat #41
+                        "PC máximo: 1.976 (Nível 40) <br> Altura: 1,6m <br> Peso: 55,0kg",
+                        "PC máximo: 1.228 (Nível 40) <br> Altura: 0,5m <br> Peso: 5,4kg",   //Oddish #43
+                        "PC máximo: 1.681 (Nível 40) <br> Altura: 0,8m <br> Peso: 8,6kg",
+                        "PC máximo: 2.559 (Nível 40) <br> Altura: 1,2m <br> Peso: 18,6kg",
+                        "PC máximo: 1.018 (Nível 40) <br> Altura: 0,3m <br> Peso: 5,4kg",   //Paras #46
+                        "PC máximo: 1.859 (Nível 40) <br> Altura: 1,0m <br> Peso: 29,5kg",
+                        "PC máximo: 1.004 (Nível 40) <br> Altura: 1,0m <br> Peso: 30,0kg",
+                        "PC máximo: 2.082 (Nível 40) <br> Altura: 1,5m <br> Peso: 12,5kg",  //Venomoth #49
+                        "PC máximo: 676 (Nível 40) <br> Altura: 0,2m <br> Peso: 0,8kg",
+                        "PC máximo: 1.567 (Nível 40) <br> Altura: 0,7m <br> Peso: 33,3kg",
+                        "PC máximo: 748 (Nível 40) <br> Altura: 0,4m <br> Peso: 4,2kg",     //Meowth #52
+                        "PC máximo: 1.689 (Nível 40) <br> Altura: 1,0m <br> Peso: 32,0kg",
+                        "PC máximo: 1,106 (Nível 40) <br> Altura: 0,8m <br> Peso: 19,6kg",
+                        "PC máximo: 2.450 (Nível 40) <br> Altura: 1,7m <br> Peso: 76,6kg",  //Golduck #55
+                        "PC máximo: 1.164 (Nível 40) <br> Altura: 0,5m <br> Peso: 28,0kg",
+                        "PC máximo: 2.288 (Nível 40) <br> Altura: 1,0m <br> Peso: 32,0kg",
+                        "PC máximo: 1.243 (Nível 40) <br> Altura: 0,7m <br> Peso: 19,0kg",
+                        "PC máximo: 3.029 (Nível 40) <br> Altura: 1,9m <br> Peso: 155kg",   //Arcanine #59
+                        "PC máximo: 829 (Nível 40) <br> Altura: 0,6m <br> Peso: 12,4kg",
+                        "PC máximo: 1.419 (Nível 40) <br> Altura: 1,0m <br> Peso: 20,0kg",
+                        "PC máximo: 2.586 (Nível 40) <br> Altura: 1,3m <br> Peso: 54,0kg",
+                        "PC máximo: 1.342 (Nível 40) <br> Altura: 0,9m <br> Peso: 19,5kg",  //Abra #63
+                        "PC máximo: 2.059 (Nível 40) <br> Altura: 1,3m <br> Peso: 56,5kg",
+                        "PC máximo: 3.057 (Nível 40) <br> Altura: 1,5m <br> Peso: 48,0kg",
+                        "PC máximo: 1.278 (Nível 40) <br> Altura: 0,8m <br> Peso: 19,5kg",
+                        "PC máximo: 2.031 (Nível 40) <br> Altura: 1,5m <br> Peso: 70,5kg",
+                        "PC máximo: 3.056 (Nível 40) <br> Altura: 1,6m <br> Peso: 130,0kg", //Machamp #68
+                        "PC máximo: 1.033 (Nível 40) <br> Altura: 0,7m <br> Peso: 4,0kg",
+                        "PC máximo: 1.611 (Nível 40) <br> Altura: 1,0m <br> Peso: 6,4kg",
+                        "PC máximo: 2.431 (Nível 40) <br> Altura: 1,7m <br> Peso: 15,5kg",
+                        "PC máximo: 1.040 (Nível 40) <br> Altura: 0,9m <br> Peso: 45,5kg",
+                        "PC máximo: 2.422 (Nível 40) <br> Altura: 1,6m <br> Peso: 55,0kg",
+                        "PC máximo: 1.293 (Nível 40) <br> Altura: 0,4m <br> Peso: 20,0kg",  //Geodude #74
+                        "PC máximo: 1.897 (Nível 40) <br> Altura: 1,0m <br> Peso: 105,0kg",
+                        "PC máximo: 2.949 (Nível 40) <br> Altura: 1,4m <br> Peso: 300,0kg",
+                        "PC máximo: 1.697 (Nível 40) <br> Altura: 1,0m <br> Peso: 30,0kg",
+                        "PC máximo: 2.461 (Nível 40) <br> Altura: 1,7m <br> Peso: 95,0kg",
+                        "PC máximo: 1.226 (Nível 40) <br> Altura: 1,2m <br> Peso: 36,0kg",  //Slowpoke #79
+                        "PC máximo: 2.545 (Nível 40) <br> Altura: 1,6m <br> Peso: 78,5kg",
+                        "PC máximo: 1.362 (Nível 40) <br> Altura: 0,3m <br> Peso: 6,0kg",
+                        "PC máximo: 2.485 (Nível 40) <br> Altura: 1,0m <br> Peso: 60,0kg",
+                        "PC máximo: 1.236 (Nível 40) <br> Altura: 0,8m <br> Peso: 15,0kg",  //Farfetch'd #83
+                        "PC máximo: 1.200 (Nível 40) <br> Altura: 1,4m <br> Peso: 39,2kg",
+                        "PC máximo: 2.362 (Nível 40) <br> Altura: 1,8m <br> Peso: 85,2kg",
+                        "PC máximo: 971 (Nível 40) <br> Altura: 1,1m <br> Peso: 90,0kg",
+                        "PC máximo: 1.985 (Nível 40) <br> Altura: 1,7m <br> Peso: 120,0kg",
+                        "PC máximo: 1.374 (Nível 40) <br> Altura: 0,9m <br> Peso: 30,0kg",  //Grimer #88
+                        "PC máximo: 2.757 (Nível 40) <br> Altura: 0,9m <br> Peso: 30,0kg",
+                        "PC máximo: 1.080 (Nível 40) <br> Altura: 0,3m <br> Peso: 4,0kg",
+                        "PC máximo: 2.547 (Nível 40) <br> Altura: 1,5m <br> Peso: 132,0kg",
+                        "PC máximo: 1.229 (Nível 40) <br> Altura: 1,3m <br> Peso: 0,1kg",
+                        "PC máximo: 1.963 (Nível 40) <br> Altura: 1,6m <br> Peso: 0,1kg",
+                        "PC máximo: 2.878 (Nível 40) <br> Altura: 1,5m <br> Peso: 40,5kg",  //Gengar #93
+                        "PC máximo: 1.101 (Nível 40) <br> Altura: 8,8m <br> Peso: 210,0kg",
+                        "PC máximo: 1.040 (Nível 40) <br> Altura: 1,0m <br> Peso: 32,4kg",
+                        "PC máximo: 2.090 (Nível 40) <br> Altura: 1,6m <br> Peso: 75,6kg",
+                        "PC máximo: 1.561 (Nível 40) <br> Altura: 0,4m <br> Peso: 6,5kg",   //Krabby #98
+                        "PC máximo: 2.829 (Nível 40) <br> Altura: 1,3m <br> Peso: 60,0kg",
+                        "PC máximo: 1.010 (Nível 40) <br> Altura: 0,5m <br> Peso: 10,4kg",
+                        "PC máximo: 2.099 (Nível 40) <br> Altura: 1,2m <br> Peso: 66,6kg",
+                        "PC máximo: 1.175 (Nível 40) <br> Altura: 0,4m <br> Peso: 2,5kg",   //Exeggcute #102
+                        "PC máximo: 3.014 (Nível 40) <br> Altura: 2,0m <br> Peso: 120,0kg",
+                        "PC máximo: 1.019 (Nível 40) <br> Altura: 0,4m <br> Peso: 6,5kg",
+                        "PC máximo: 1.835 (Nível 40) <br> Altura: 1,0m <br> Peso: 45,0kg",
+                        "PC máximo: 2.576 (Nível 40) <br> Altura: 1,5m <br> Peso: 49,8kg",
+                        "PC máximo: 2.332 (Nível 40) <br> Altura: 1,4m <br> Peso: 50,2kg",  //Hitmonchan #107
+                        "PC máximo: 1.411 (Nível 40) <br> Altura: 1,2m <br> Peso: 65,5kg",
+                        "PC máximo: 1.214 (Nível 40) <br> Altura: 0,6m <br> Peso: 1,0kg",
+                        "PC máximo: 2.293 (Nível 40) <br> Altura: 1,2m <br> Peso: 9,5kg",
+                        "PC máximo: 1.651 (Nível 40) <br> Altura: 1,0m <br> Peso: 115,0kg", //Rhyhorn #111
+                        "PC máximo: 3.179 (Nível 40) <br> Altura: 1,9m <br> Peso: 120,0kg",
+                        "PC máximo: 1.255 (Nível 40) <br> Altura: 1,1m <br> Peso: 34,6kg",
+                        "PC máximo: 2.238 (Nível 40) <br> Altura: 1,0m <br> Peso: 35,0kg",
+                        "PC máximo: 2.586 (Nível 40) <br> Altura: 2,2m <br> Peso: 80,0kg",
+                        "PC máximo: 1.056 (Nível 40) <br> Altura: 0,4m <br> Peso: 8,0kg",   //Horsea #116
+                        "PC máximo: 2.093 (Nível 40) <br> Altura: 1,2m <br> Peso: 25,0kg",
+                        "PC máximo: 1.152 (Nível 40) <br> Altura: 0,6m <br> Peso: 15,0kg",
+                        "PC máximo: 2.162 (Nível 40) <br> Altura: 1,3m <br> Peso: 39,0kg",
+                        "PC máximo: 1.157 (Nível 40) <br> Altura: 0,8m <br> Peso: 34,5kg",  //Staryu #120
+                        "PC máximo: 2.584 (Nível 40) <br> Altura: 1,1m <br> Peso: 80,0kg",
+                        "PC máximo: 2.228 (Nível 40) <br> Altura: 1,3m <br> Peso: 54,5kg",
+                        "PC máximo: 2.706 (Nível 40) <br> Altura: 1,5m <br> Peso: 56,0kg",
+                        "PC máximo: 2.555 (Nível 40) <br> Altura: 1,4m <br> Peso: 40,6kg",
+                        "PC máximo: 2.334 (Nível 40) <br> Altura: 1,1m <br> Peso: 30,0kg",  //Electabuzz #125
+                        "PC máximo: 2.394 (Nível 40) <br> Altura: 1,3m <br> Peso: 44,5kg",
+                        "PC máximo: 2.620 (Nível 40) <br> Altura: 1,4m <br> Peso: 88,4kg",
+                        "PC máximo: 274 (Nível 40) <br> Altura: 0,9m <br> Peso: 10,0kg",
+                        "PC máximo: 3.391 (Nível 40) <br> Altura: 6,5m <br> Peso: 235,0kg", //Gyarados #130
+                        "PC máximo: 2.641 (Nível 40) <br> Altura: 2,5m <br> Peso: 220,0kg",
+                        "PC máximo: 832 (Nível 40) <br> Altura: 0,3m <br> Peso: 4,0kg",
+                        "PC máximo: 1.071 (Nível 40) <br> Altura: 0,3m <br> Peso: 6,5kg",
+                        "PC máximo: 3.114 (Nível 40) <br> Altura: 1,0m <br> Peso: 29,0kg",
+                        "PC máximo: 2.888 (Nível 40) <br> Altura: 0,8m <br> Peso: 24,5kg",  //Jolteon #135
+                        "PC máximo: 3.029 (Nível 40) <br> Altura: 0,9m <br> Peso: 25,0kg",
+                        "PC máximo: 1.720 (Nível 40) <br> Altura: 0,8m <br> Peso: 36,5kg",
+                        "PC máximo: 1.544 (Nível 40) <br> Altura: 0,4m <br> Peso: 7,5kg",
+                        "PC máximo: 2.786 (Nível 40) <br> Altura: 1,0m <br> Peso: 35,0kg",
+                        "PC máximo: 1.370 (Nível 40) <br> Altura: 0,5m <br> Peso: 11,5kg",  //Kabuto #140
+                        "PC máximo: 2.093 (Nível 40) <br> Altura: 1,2m <br> Peso: 25,0kg",
+                        "PC máximo: 2.713 (Nível 40) <br> Altura: 1,3m <br> Peso: 40,5kg",
+                        "PC máximo: 2.783 (Nível 40) <br> Altura: 1,8m <br> Peso: 59,0kg",
+                        "PC máximo: 3.225 (Nível 40) <br> Altura: 2,1m <br> Peso: 460,0kg",
+                        "PC máximo: 3.051 (Nível 40) <br> Altura: 1,7m <br> Peso: 55,4kg",
+                        "PC máximo: 3.527 (Nível 40) <br> Altura: 1,6m <br> Peso: 52,6kg",  //Zapdos #145
+                        "PC máximo: 3.465 (Nível 40) <br> Altura: 2,0m <br> Peso: 60,0kg",
+                        "PC máximo: 1.004 (Nível 40) <br> Altura: 1,8m <br> Peso: 3,3kg",
+                        "PC máximo: 1.780 (Nível 40) <br> Altura: 4,0m <br> Peso: 16,5kg",
+                        "PC máximo: 3.792 (Nível 40) <br> Altura: 2,2m <br> Peso: 210,0kg",
+                        "PC máximo: 4.178 (Nível 40) <br> Altura: 2,0m <br> Peso: 122,0kg", //Mewtwo #150
+                        "PC máximo: 3.265 (Nível 40) <br> Altura: 0,4m <br> Peso: 4,0kg"]   //Mew #151
 
 var closeInfo = document.getElementById("closeInfo")
 closeInfo.style.backgroundImage = "url(./img/closeButton.png)"
@@ -247,7 +399,7 @@ for (var i=0; i <=numbersPokemon; i++){
     infoClick[i].className = "infoClick"+i
     infoClick[i].style.backgroundImage = "linear-gradient(rgb(251,176,52), rgb(255,221,0))"
     
-    for(var j=0; j < 5; j++){
+    for(var j=0; j < 10; j++){
         info[i,j] = document.createElement("div");
         info[i,j].className = "info"+j
         
@@ -265,13 +417,17 @@ for (var i=0; i <=numbersPokemon; i++){
             info[i,1].innerHTML= pokemon[i] + " - " + (i+1)
         }
         
-        info[i,2] = document.createElement("h4");
+        info[i,2] = document.createElement("h3");
         info[i,2].id = "infoTitleAbout"
         info[i,2].innerHTML= "Sobre"
 
         info[i,3] = document.createElement("p");
         info[i,3].id = "infoAbout"
         info[i,3].innerHTML= infoAboutPokemon[i]
+
+        info[i,4] = document.createElement("p");
+        info[i,4].id = "infoDetails"
+        info[i,4].innerHTML= infoDetailsPokemon[i]
 
         document.body.appendChild(infoClick[i]).appendChild(info[i,j]);
     }
