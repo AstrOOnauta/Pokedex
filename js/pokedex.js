@@ -1,5 +1,7 @@
-var cardsPokemon = [];
-var infoCardsPokemon = []
+var cardsPokemon = [];  //Array for support main cards
+var infoCardsPokemon = []   //Array for support divs for info in main cards
+
+//Array with name of all pokemons
 const pokemon = ["Bulbasaur", "Ivysaur", "Venusaur", "Charmander", "Charmeleon", "Charizard", "Squirtle",
                 "Wartortle", "Blastoise", "Caterpie", "Metapod", "Butterfree", "Weedle", "Kakuna",
                 "Beedrill", "Pidgey", "Pidgeotto", "Pidgeot", "Rattata", "Raticate", "Spearow", "Fearow",
@@ -21,6 +23,7 @@ const pokemon = ["Bulbasaur", "Ivysaur", "Venusaur", "Charmander", "Charmeleon",
                 "Kabutops", "Aerodactyl", "Snorlax", "Articuno", "Zapdos", "Moltres", "Dratini", "Dragonair",
                 "Dragonite", "Mewtwo", "Mew"]
 
+//Array with types of all pokemons
 const typePokemon = ["Planta/Venenoso", "Planta/Venenoso", "Planta/Venenoso", "Fogo", "Fogo", "Fogo/Voador",
                     "Água", "Água", "Água", "Inseto", "Inseto", "Inseto/Voador", "Inseto/Venenoso",
                     "Inseto/Venenoso", "Inseto/Venenoso", "Normal/Voador", "Normal/Voador", "Normal/Voador",
@@ -46,9 +49,11 @@ const typePokemon = ["Planta/Venenoso", "Planta/Venenoso", "Planta/Venenoso", "F
                     "Pedra/Voador", "Normal", "Gelo/Voador", "Elétrico/Voador", "Fogo/Voador", "Dragão",
                     "Dragão", "Dragão/Voador", "Psíquico", "Psíquico"]
                     
-const numbersPokemon = 150;
-var infoClick = [];
-var info = [];
+const numbersPokemon = 150;     //Pokemon numbers in first generation
+var infoClick = [];     //Array for support secondary cards
+var info = [];      //Array for support divs info in secondary cards
+
+//Array with description of all pokemons
 var infoAboutPokemon = ["Bulbasaur pode ser visto tirando uma soneca ao sol. A semente nas suas costas cresce cada vez mais à medida que absorve os raios solares.",
                         "Há um broto nas costas deste Pokémon. As pernas e o tronco de Ivysaur são grossos e fortes para aguentar seu peso. Se começa a passar mais tempo no sol, é sinal de que seu bulbo logo irá florescer em uma flor grande.",
                         "Há uma flor grande nas costas de Venusaur. Dizem que a flor adquire cores vívidas se está bem nutrido e se toma muito sol. O aroma da flor acalma as emoções das pessoas.",
@@ -353,21 +358,24 @@ var infoDetailsPokemon = ["PC máximo: 1.115 (Nível 40) <br> Altura: 0,7m <br> 
                         "PC máximo: 4.178 (Nível 40) <br> Altura: 2,0m <br> Peso: 122,0kg", //Mewtwo #150
                         "PC máximo: 3.265 (Nível 40) <br> Altura: 0,4m <br> Peso: 4,0kg"]   //Mew #151
 
+//Creates the X for close the secondary cards
 var closeInfo = document.getElementById("closeInfo")
 closeInfo.style.backgroundImage = "url(./img/closeButton.png)"
 
+//Creates the pokemon main cards at the page start
 for(var i=0; i <= numbersPokemon; i++){
     cardsPokemon[i] = document.createElement("div");
     cardsPokemon[i].id = "card"
     cardsPokemon[i].className = "card"+i
     cardsPokemon[i].style.backgroundImage = "linear-gradient(rgb(251,176,52), rgb(255,221,0))"
 
+    //Creates the pokemon info in main cards
     for(var j=0; j<3; j++){
         infoCardsPokemon[i,j] = document.createElement("div");
         infoCardsPokemon[i,j].className = "infoCard"+j;
         infoCardsPokemon[i,0].style.backgroundImage = "url(./img/pokemon"+i+".gif)"
 
-
+        //Creates pokemon name and your number in main card
         infoCardsPokemon[i,1] = document.createElement("h3");
         if (i<9){
             infoCardsPokemon[i,1].innerHTML= pokemon[i] + " - 00" + (i+1)
@@ -378,7 +386,7 @@ for(var i=0; i <= numbersPokemon; i++){
         }
         infoCardsPokemon[i,1].style.fontFamily = "Monospace"
 
-        
+        //Creates the types of each pokemon in main card
         infoCardsPokemon[i,2] = document.createElement("h5");
         infoCardsPokemon[i,2].innerHTML= typePokemon[i]
         infoCardsPokemon[i,2].style.color = "white"
@@ -387,18 +395,22 @@ for(var i=0; i <= numbersPokemon; i++){
         infoCardsPokemon[i,2].style.boxShadow = "0px 0px 5px 1px rgba(0,0,0,0.8)"
         infoCardsPokemon[i,2].style.border = "1px solid black"
         infoCardsPokemon[i,2].style.borderRadius = "10% / 50%"
-
+        
+        //Informs that array infoCardsPokemon[] is a child of array cardsPokemon[]
         document.getElementById("main").appendChild(cardsPokemon[i]).appendChild(infoCardsPokemon[i,j]);
     }
+    //Informs that array cardsPokemon[] is a child of main grind
     document.getElementById("main").appendChild(cardsPokemon[i]);
 }
 
+//Creates the pokemon secondary cards when click in main card 
 for (var i=0; i <=numbersPokemon; i++){
     infoClick[i] = document.createElement("div")
     infoClick[i].id = "mainInfoClick"
     infoClick[i].className = "infoClick"+i
     infoClick[i].style.backgroundImage = "linear-gradient(rgb(251,176,52), rgb(255,221,0))"
-    
+
+    //Creates the pokemon info in secondary cards
     for(var j=0; j < 10; j++){
         info[i,j] = document.createElement("div");
         info[i,j].className = "info"+j
@@ -432,9 +444,9 @@ for (var i=0; i <=numbersPokemon; i++){
         document.body.appendChild(infoClick[i]).appendChild(info[i,j]);
     }
     document.body.appendChild(infoClick[i]);
-
 }
 
+//Creates the click events in main card to arise the secondary cards
 cardsPokemon[0].onclick = function cardClick(){
     infoClick[0].style.display = "block"
     closeInfo.style.display = "block"
@@ -1040,7 +1052,7 @@ cardsPokemon[150].onclick = function cardClick(){
     closeInfo.style.display = "block"
 }
 
-
+//Click event to close the secondary card in X
 closeInfo.onclick = function close(){
     closeInfo.style.display = "none"
     for(var i=0; i <=numbersPokemon; i++){
